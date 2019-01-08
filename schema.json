@@ -1,0 +1,5064 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "chemistry buddy",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "no no",
+                        "nope",
+                        "no"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AskName",
+                    "slots": [
+                        {
+                            "name": "formula",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "ask chemistry buddy what is the chemical name of {formula}",
+                        "ask chemistry buddy what is the name of {formula}",
+                        "what is the chemical name of {formula}",
+                        "what is the name of {formula}"
+                    ]
+                },
+                {
+                    "name": "AskFormula",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "names"
+                        }
+                    ],
+                    "samples": [
+                        "ask chemistry buddy what is the chemical formula of {name}",
+                        "ask chemistry buddy what is the formula of {name}",
+                        "what is the chemical formula of {name}",
+                        "What is the formula of {name}"
+                    ]
+                },
+                {
+                    "name": "YesIntent",
+                    "slots": [],
+                    "samples": [
+                        "yep",
+                        "yeah",
+                        "yes"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "names",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "hydride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "selenium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "phosphide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dichloride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "phosphoric"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "phosphate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "prussian"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "columbite"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "phosphate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "xenon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "metaphosphoric"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "perchloric"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tellurous"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "carbonic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "telluride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "selenate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "uranyl"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "germane"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "trisodium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "arsenic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dichromate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tetrafluoride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "krypton"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "selenite"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tetrafluorohydrazine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "octaoxide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "protonated"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pyrosulfuric"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "platinum"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "xenic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "erbium-silver"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vanadium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "scandium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "permanganate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "trioxidane"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cyanide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "water"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nitrosylsulfuric"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "oxytrichloride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "garnet"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "arsenous"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "zirconia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tetroxide,"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "triflate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tetraborane"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "osmium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "perrhenate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bromate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "disulfide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "arsine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "monopersulfate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chromic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "diborane"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chrome-alum"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "zinc"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hexacarbonyl"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "carbonyl"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chlorite"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sodium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tetrachloride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "oxydichloride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hydrosulfide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "trifluoromethylisocyanide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hexafluoride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "stibine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "suboxide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ferrite"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "known"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tetraiodide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "oxygen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "triuranium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "oxychloride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "monofluorophosphate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "calcium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "phosphomolybdic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "phosphotungstic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tungsten"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "molybdic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chromyl"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "phosgene"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nitrate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "arsenate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nitroprusside"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "borax"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "carboplatin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "phosphite"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hydrazoic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ferrioxalate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "periodate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rubidium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hydroiodic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hexoxide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "manganese"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eight"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "samarium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mercury"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "palladium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "caesium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ozone"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "aluminate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "iodide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "carbide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hydrobromic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "radon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sulfane"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chloric"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "as"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gallium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hydrogen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "thiophosgene"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "titanyl"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chromium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "thiocyanate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tantalum"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cerium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pentaborane"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sesquisulfide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ytterbium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tetrasulfur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fluoride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hypophosphite"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "borohydride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "carbon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hydrazine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dinitrogen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neodymium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "erbium-gold"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hexachloroplatinate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "boric"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dichlorosilane"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "heptoxide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hafnium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lithium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rhodium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tetrathiocyanatodiamminechromate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tetranitride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hexadecacarbonylhexarhodium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "persulfate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cisplatin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tetrachloroauric"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "erbium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pentasulfide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "oxide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "decafluoride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "strontium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bromine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bromite"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tellurite"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "yttrium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "arsenide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "silver"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "indium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "reagent"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "oxybis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "trifluoride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tungstate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sulfamic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sulfuric"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sulfite"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "stannous"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hypochlorous"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hexasulfide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chloride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pentafluoride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "trifluoromethanesulfonic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tripotassium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "terbium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "peroxide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "disilane"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bromide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gold"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "thorium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tellurium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "perchlorate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "orthophosphate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "molybdenum"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ditelluride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dichlorine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nitrogen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "perchloryl"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sulfate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "silicofluoric"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hypoiodite"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sulfur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "phosphorous"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cyanuric"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cadmium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nitrite"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cacodylic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "zirconium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "silicate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "trichloride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "erbium-iridium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nickel"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ammonium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "thioantimoniate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "magnesium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "iron"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pentoxide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sodamide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gadolinium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "monochloride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "trimethylphosphine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ammonia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "orthosilicate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "diammonium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "persulfuric"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "thulium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cobalt"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chlorate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sulfurous"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fluoroborate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "silicon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "telluric"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "boride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "plutonium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "molecular"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tetrahydroxide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "thionyl"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "antimony"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "the"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "triiodide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "potassium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "borate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nitride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ruthenium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "niobium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "silane"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "two"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "silicic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "digermane"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lanthanum"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fulminate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "molybdate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tallium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tetramminecopper"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tetrabromide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "heptafluoride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dysprosium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ferrocyanide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cyanate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "biselenide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "perxenic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "acid"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "boron"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tribromide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "phosphine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lead"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "percarbonate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sulfuryl"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pentabromide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hydrochloric"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tetroxide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chromate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bismuth"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "barium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hydroxylamine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "oxybromide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "digallane"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gel"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tetroxide,also"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "monoxide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sulfide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bicarbonate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "disulfur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "phenylphosphine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hydrate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "selenic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "titanate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "phenylarsine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "trichlorosilane"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "iodic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "selenide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "erbium-copper"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "subfluoride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "manganate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "antimonide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "silica"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "decaborane"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "beryllium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "iridium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hexafluoroplatinate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "superoxide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "aluminium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chlorine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "copper"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hypophosphorous"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "thortveitite"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pentachloride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "perbromate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nitric"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "silicochloroform,"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "monohydrate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "carborundum"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "thiophosphoryl"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "selenoyl"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "thallium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hydroxide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "carbonate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "europium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "selenious"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "difluoride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "see"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "phosphorus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hydrogencarbonate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "azide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "uranium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nessler's"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "radium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "germanium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hypobromite"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "praseodymium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dioxide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "iodate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cyanamide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "three"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "uranate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "iodine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hypochlorite"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ferrate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "iodidate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vanadate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "trioxide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "perborate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "titanium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cyanogen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tungstic"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "formula",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "CNCL "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "K2SO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA4FECN6 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ALNO33 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BENO32 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SNF2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH4HCO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CECD "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NACLO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HGSE "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ALAS "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CSCL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ERAG "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TIN "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GEO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H2TEO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NABR "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H2SO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TLF "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SROH2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CUO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2MNO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CAC2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GEO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZNI2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AS2O3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2SIO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LI2SO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H3PO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PBSE "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H2XEO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TICL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "FEO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CAF2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ERIR "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "N2F4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CEAL "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SNCL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HCLO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "UF6 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SECL4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH42SO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "UF5 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CN2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PBCL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CEZN "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H2SO5 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AUCL "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NASH "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "FE7CN18 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "RNF2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LAAL "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "INN "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "IF5 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MNF4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B5H9 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NICO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GE2H6 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AUF5 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "IF7 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH2OH "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PBI2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "C6H5ASO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "S4N4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BEOH2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2PFO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ALOH3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CESO42 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SMI2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CLOCLO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AUCL32 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H3PO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BEF2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BACL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SICL4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HGTE "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CLO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PBS "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SB2S5 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2SEO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Y2O3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "YZN "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SI3N4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COF2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "VC "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AG2F "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GDCL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ICN "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BEO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "RACL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CACL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H2MOO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ASOH3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "FE3O4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CDBR2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "UO2CO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MGO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CEAG "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AGCNO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BECL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NACL "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CSF "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2MNO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "K2HGI4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BE3N2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PBO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AGCLO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NBOCL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2S2O8 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZNS "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GEI2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CUO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BAO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PBHASO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NAIO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SMCL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "UO2SO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KRF2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "VO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "INCL "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "O3CLOOCLO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BATIO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "K2B4O7•4H2O "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AUF3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "OSO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LIBH4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PTCL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H2SEO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ALCL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AU2SE3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PBO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KCL "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B10H14 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2S "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CEMG "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NANH2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CL3PS "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MNSO4.H2O "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2FECN5NO.2H2O "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZRC "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "THO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "S2F10 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H2O "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NAN3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NACLO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GESE2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SEF4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HF "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZNCO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HPO32- "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BCL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LATL "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HGSE "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "YB2O3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TL2O3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H2SO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "C24H54OSN2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "YCU "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CSH "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H2SIF6 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KCLO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GECL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SROH2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "OSO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NABR "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "VF4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NAO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BI2TE3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BRCL "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H2TE "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MGCL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NABH4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GE3N4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H2SE "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CDSO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "U3O8 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2B4O7·10H2O "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NAOH "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HN3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LIO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CDCL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH4CLO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HCLO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SIOXOH4-2XN "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CSCL "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CL2O "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TA2O5 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZRSIO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "XEF2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ALSB "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AGBF4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "VCL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CLO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LAMG "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH4CRSCN4NH32 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AGCL "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ERCU "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "RBCL "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HFCL4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PBR3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CL2O2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B2O3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CEBR3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LICLO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AGN3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GESE "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HCL "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BESO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KIO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TIO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "VO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MNCL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZNTE "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LICLO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CNBR "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "RB2O "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2SE "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HCLO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CCL4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "V2O3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CSHCO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SF6 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CD3AS2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LIALH4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BAFEO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "N2O4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "FENO33H2O9 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AGBRO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GEF2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MGSO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AUH "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CDNO32 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HIO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "VOCL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GAN "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DYCL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "XEO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2S2O3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "C6H12N2O4PT "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BEI2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "FECL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2O4SE "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZNSO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2TEO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH4N3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CU2O "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TICL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "INSB "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GEH4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "RBF "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2CO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TIN "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CLO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ERAG "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZNO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "RH6CO16 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GEBR2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CLFO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CDI2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CRSO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "C3H9P "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "UO2NO32 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SIH4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TMCL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BRF3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "YIR "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AL2SO43 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BRF5 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LI2CO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PH3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AGNO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Y2S3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CASO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ALN "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CECL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "VF3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BAN33 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "2NA2CO3.3H2O2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NOHSO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GEI4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CUOH2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PB3PO42 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SIO2·NH2O "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ICL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZNBR2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SEF6 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CL2O6 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GACL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CS2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AUBR32 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "RUO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MG3PO42 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CDF2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SBCL5 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AG2SO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TL2CO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZNSE "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SOCL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZRO2·NH2O "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CUS "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH4HCO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HGCL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AGBR "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH4OH "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NACLO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CUCL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH42SO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GETE "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BACLO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PF5 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA3PO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H4O4ZR "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SEOCL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GAAS "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Y3AL5O12 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NAIO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "YBCL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "UO2OH2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LICL "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H2WO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B2H6 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H3PO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "INP "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SNF2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CRO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CETL "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AU2S "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "WC "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CACRO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CL2O3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2MOO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AUI3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KALF4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NBCL5 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH42PTCL6 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KBRO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KVO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA4FECN6 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H3PMO12O40 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AG2O "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SF4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CBR4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SES2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CH32ASO2H "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "YBA2CU3O7 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "K2SO4·KHSO4·2KHSO5 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2B4O7 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SCF3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "FE2+NB2O6 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BECO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NAREO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COCO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LII "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SC2O3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SRCO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZRCL4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PTCL4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MNO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GA2H6 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COSO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HBR "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GEF4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HG2CL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BENO32 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GES2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "YAS "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "P4S3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BN "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "O3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BF3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CNCL "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NAIO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PBSO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H4XEO6 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BACRO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PBTE "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZNCN2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA3SBS4.9H2O "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TECL4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SCOSO2CF33 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BAFE2O4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NIO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "K3FEC2O43 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2O "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TAC "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "WCL6 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "XEPTF6 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NANO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2WO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SIO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LA2CO33 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LINO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CRCL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH42CR2O7 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "K2CO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H2O2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CUN32 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "WF6 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MNCL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B4C "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SBF5 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AUBR "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "C3CL3N3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NAOCL "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CI4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CU2S "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H2SO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SEOBR2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "C2NF3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TIBR4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BESO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PRCL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "P4S10 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SRO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AGCLO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH4CL "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CRO2CL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SCY2SI2O7 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BACO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H2TEO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SBH3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TBCL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BANO32 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BETE "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H3+ "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "K3PO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NABRO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AL2O3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HPO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NAHCO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HG2SO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ERAU "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GAP "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LAAG "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PDNO32 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LI2O2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TL2SO42 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CACLO32 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MN3PO42 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NACN "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "VBR3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BEH2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PDCL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SIBR4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GEO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SI2H6 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KCN "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SO2CL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SEO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NABRO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "VN "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZRW2O8 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NAH "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "RBOH "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AG2CRO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CACN2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SRCL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "XEF4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "OF2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CL3HSI "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "EUCL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NABRO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZRN "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PBNO32 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COS "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CAH2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AU2S3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BEBR2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LIBR "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PI3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H3PW12O40 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "YRH "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KOH "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "UO22OH4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CF3SO3H "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LI2S "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BAOH2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KBR "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NAALO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SRTIO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BEBH42 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CDSE "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CECD "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CUNO32 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "FE4FECN63 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "YSB "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COCL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LIOH "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NACLO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SIC "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ICL "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H2S "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SB2O3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TEO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NAI "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AUCL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "K2SO4CR2SO43.24H2O "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H2SEO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CUNH34SO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CDTE "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "UF4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "YAG "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AUI "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LAHG "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AGF "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH42HPO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "RBNO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "YCD "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2O7U2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ERCL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "VCL4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HLIO3S "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AG2S "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SEO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AG3N "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TIC "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "RBI "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H6TEO6 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ASH3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PBR5 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "UO2CL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2SO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AUSE "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SIO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NINO32 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "VCL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HFF4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH42CRO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LICOO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ALAS "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PTCL2NH32 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LIH "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KI "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "YBR3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "YMG "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "S2CL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LACD "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "K2S "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "COBR2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H2CO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AU4CL8 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AU2O3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CRCL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MOO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NAPO2H2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "WCO6 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CEHG "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "C6O6MO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "V2O5 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH42CENO36 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CS2CO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CSCL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH42S4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ALNO33 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "N2O5 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "IRCL4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "FELIO4P "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TLF "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZROH4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2O2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CUCO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HGS "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SNCL4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CRO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "RB2TE "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HGONC2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AG3PO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NABRO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TIB2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SRNO32 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Y3FE5O12 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GECL4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HNO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AUTE2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SEO2F2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "FESCN3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NABO3.NH2O "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GEBR4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H3BO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KTIOPO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "RHCL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2C2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CUCL "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AGOH "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NIOH2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "C6H7P "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "RBBR "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MOS2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TICL4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "FE2O3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B6O "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "TII4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "YAU "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "UO2F2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BAI2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "N2H4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AGI "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LICLO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CUSO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BAF2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CL2O7 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CR2O3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MGCO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KCACL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SCCL3 AND HYDRATE "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H2S2O7 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "P2O5 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ALP "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH4CN "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZRO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DY2TI2O7 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BI2O3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "K2SO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DY2O3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "INAS "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "VOSO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "FECL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH4CLO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH4NO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SCNO33 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KCLO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZNF2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PBCO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BAO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BASO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PCL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H3NO3S "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NACNO "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "UCL4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "B4H10 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GD2O3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NASCN "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ZNCL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KNO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NA2SO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MGSB "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CS2CRO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CAOH2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SE2S6 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PF3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "YF3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HI "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "H2O3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KMNO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SIH2CL2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HF2K "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ALF3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NH42S2O8 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LAZN "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "AGF2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NDCL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PUCL3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NAHSE "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GES "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "KHCO3 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NAMNO4 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GASB "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "PUO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NANO2 "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HGSO4 "
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
